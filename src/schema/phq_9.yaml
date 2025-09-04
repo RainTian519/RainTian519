@@ -1,10 +1,10 @@
-id: https://w3id.org/OHD/DFA-study/cohra2
-name: cohra2
-title: COHRA2 Study Schema
+id: https://w3id.org/OHD/MH-study/phq_9
+name: phq_9
+title: PHQ-9 Study Schema
 license: https://mit-license.org/
 
 description: >-
-  LinkML schema for defining data elements used in the COHRA2 study.
+  LinkML schema for defining data elements used in the PHQ-9 study.
 
 prefixes:
   linkml: https://w3id.org/linkml/
