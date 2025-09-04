@@ -6,8 +6,7 @@ on:
     paths:
       - 'mkdocs.yml'
       - src/schema/core.yaml
-      - src/schema/cohra2.yaml
-      - src/schema/ada_ohwb.yaml
+      - src/schema/phq_9.yaml
       - 'src/docs/*.md'
       - 'src/docs/*.html'
       - 'docs/images/*'
