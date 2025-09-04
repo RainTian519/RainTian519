@@ -1,0 +1,271 @@
+id: https://w3id.org/OHD/DFA-study/cohra2
+name: cohra2
+title: COHRA2 Study Schema
+license: https://mit-license.org/
+
+description: >-
+  LinkML schema for defining data elements used in the COHRA2 study.
+
+prefixes:
+  linkml: https://w3id.org/linkml/
+  core: https://w3id.org/OHD/DFA-study/core/
+  cohra2: https://w3id.org/OHD/DFA-study/cohra2/
+  OHD:  http://purl.obolibrary.org/obo/OHD_
+  dcterms: http://purl.org/dc/terms/
+  dwc: http://rs.tdwg.org/dwc/terms/
+
+imports:
+  - linkml:types
+  - core
+default_range: string
+default_prefix: cohra2
+
+classes:
+  COHRA2Dataset:
+    is_a: Dataset
+    description: >-
+      The COHRA2 dataset
+    slot_usage:
+      records:
+        range: COHRA2Record
+
+  COHRA2Record:
+    is_a: Record
+    description: >-
+      A record in the COHRA2 dataset
+    slots:
+      - Participant_ID
+      - Timepoint
+      - TimepointDesc
+      - Site
+      - Pedigree_Name
+      - Age
+      - Sex
+      - demRace
+      - Ethnicity
+      - DF01
+      - DF02
+      - DF03
+      - DF04
+      - DF05
+      - DF06
+      - DF07
+      - DF08
+      - DF09
+      - DF10
+      - DF11
+      - DF12
+      - DF13
+      - DF14
+      - DF15
+      - DF16
+      - DF17
+      - DF18
+      - DF19
+      - DF20
+      - DF21
+      - DF22
+      - DF23
+      - DF24
+      - DF25
+      - DF26
+      - DF27
+      - DF28
+      - DF29
+
+slots:
+  Participant_ID: 
+    description: >-
+      The participant's study ID.
+    range: integer
+  Timepoint:
+    description: >-
+      The timepoint in the study when the visit occurred.
+    range: integer
+  TimepointDesc:
+    description: >-
+      Description of the timepoint.
+    range: string
+  Site:
+    description: >-
+      The code for the study site where the assessment was given.
+    range: string
+  Pedigree_Name:
+    description: >-
+      The Family pedigree number assigned by genetic relationship.
+    range: integer
+  Age:
+    description: >-
+      The particpant's age at the time of the visit.
+    range: float
+  Sex:
+    description: >-
+      The particpant's sex
+    range: integer
+  demRace:
+    description: >-
+      What is your race/ethnicity?
+    range: integer
+  Ethnicity:
+    description: >-
+      Hispanic or Latino
+    range: integer
+  DF01:
+    description: >-
+      Has fear of dental work ever caused you to put off making an appointment?
+    annotations:
+      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000421 # DFS 01
+    range: integer
+  DF02:
+    description: >-
+      Has fear of dental work ever caused you to cancel or not appear for an appointment?
+    annotations:
+      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000422 # DFS 02
+    range: integer
+  DF03:
+    description: >-
+      When having dental work done, my muscles become tense.
+    annotations:
+      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000423 # DFS 03
+    range: integer
+  DF04:
+    description: >-
+      When having dental work done, my breathing rate increases.
+    annotations:
+      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000424 # DFS 04
+    range: integer
+  DF05:
+    description: >-
+      When having dental work done, I perspire.
+    annotations:
+      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000426 # DFS 05
+    range: integer
+  DF06:
+    description: >-
+      When having dental work done, I feel nauseated and sick to my stomach.
+    annotations:
+      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000427 # DFS 06
+    range: integer
+  DF07:
+    description: >-
+      When having dental work done, my heart beats faster.
+    annotations:
+      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000428 # DFS 07
+    range: integer
+  DF08:
+    description: >-
+      Please rate how much fear, anxiety, or unpleasantness each of these dental situations causes you: Making an appointment for dentistry.
+    annotations:
+      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000429 # DFS 08
+    range: integer
+  DF09:
+    description: >-
+      Please rate how much fear, anxiety, or unpleasantness each of these dental situations causes you: Approching the dentist's office.
+    annotations:
+      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000430 # DFS 09
+    range: integer
+  DF10:
+    description: >-
+      Please rate how much fear, anxiety, or unpleasantness each of these dental situations causes you: Sitting in the waiting room.
+    annotations:
+      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000431 # DFS 10
+    range: integer
+  DF11:
+    description: >-
+      Please rate how much fear, anxiety, or unpleasantness each of these dental situations causes you: Being seated in the dental chair.
+    annotations:
+      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000432 # DFS 11
+    range: integer
+  DF12:
+    description: >-
+      Please rate how much fear, anxiety, or unpleasantness each of these dental situations causes you: The smell of the dentist's office.
+    annotations:
+      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000433 # DFS 12
+    range: integer
+  DF13:
+    description: >-
+      Please rate how much fear, anxiety, or unpleasantness each of these dental situations causes you: Seeing the dentist walk in.
+    annotations:
+      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000434 # DFS 13
+    range: integer
+  DF14:
+    description: >-
+      Please rate how much fear, anxiety, or unpleasantness each of these dental situations causes you: Seeing the anesthetic needle.
+    annotations:
+      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000435 # DFS 14
+    range: integer
+  DF15:
+    description: >-
+      Please rate how much fear, anxiety, or unpleasantness each of these dental situations causes you: Feeling the needle injected.
+    annotations:
+      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000436 # DFS 15
+    range: integer
+  DF16:
+    description: >-
+      Please rate how much fear, anxiety, or unpleasantness each of these dental situations causes you: Seeing the drill.
+    annotations:
+      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000437 # DFS 16
+    range: integer
+  DF17:
+    description: >-
+      Please rate how much fear, anxiety, or unpleasantness each of these dental situations causes you: Hearing the drill.
+    annotations:
+      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000438 # DFS 17
+    range: integer
+  DF18:
+    description: >-
+      Please rate how much fear, anxiety, or unpleasantness each of these dental situations causes you: Feeling the vibrations of the drill.
+    annotations:
+      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000439 # DFS 18
+    range: integer
+  DF19:
+    description: >-
+      Please rate how much fear, anxiety, or unpleasantness each of these dental situations causes you: Having your teeth cleaned.
+    annotations:
+      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000440 # DFS 19
+    range: integer
+  DF20:
+    description: >-
+      Please rate how much fear, anxiety, or unpleasantness each of these dental situations causes you: All things considered, how fearful are you of having dental work done?
+    annotations:
+      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000441 # DFS 20
+    range: integer
+  DF21:
+    description: >-
+      Choose the appropriate number for each item to rate your FEAR OF PAIN in relation to each event: Breaking your arm.
+    range: integer
+  DF22:
+    description: >-
+      Choose the appropriate number for each item to rate your FEAR OF PAIN in relation to each event: Having a foot doctor remove a wart from your foot with a sharp instrument.
+    range: integer
+  DF23:
+    description: >-
+      Choose the appropriate number for each item to rate your FEAR OF PAIN in relation to each event: Getting a paper cut on your finger.
+    range: integer
+  DF24:
+    description: >-
+      Choose the appropriate number for each item to rate your FEAR OF PAIN in relation to each event: Receiving an injection in your mouth.
+    range: integer
+  DF25:
+    description: >-
+      Choose the appropriate number for each item to rate your FEAR OF PAIN in relation to each event: Getting strong soap in both your eyes while bathing or showering.
+    range: integer
+  DF26:
+    description: >-
+      Choose the appropriate number for each item to rate your FEAR OF PAIN in relation to each event: Having someone slam a heavy car door on your hand.
+    range: integer
+  DF27:
+    description: >-
+      Choose the appropriate number for each item to rate your FEAR OF PAIN in relation to each event: Gulping a hot drink before it has cooled.
+    range: integer
+  DF28:
+    description: >-
+      Choose the appropriate number for each item to rate your FEAR OF PAIN in relation to each event: Receiving an injection in your hip/buttocks.
+    range: integer
+  DF29:
+    description: >-
+      Choose the appropriate number for each item to rate your FEAR OF PAIN in relation to each event: Falling down a flight of concrete stairs.
+    range: integer
+
+
+
