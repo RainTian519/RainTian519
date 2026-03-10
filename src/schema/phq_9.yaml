@@ -23,9 +23,11 @@ default_prefix: phq9
 enums:
   PHQ9ResponseScale:
     description: >-
-      Standard PHQ-09 response scale:
-      0=Not at all, 1=Several days,
-      2=More than half the days, 3=Nearly every day.
+      Standard PHQ-9 response scale:
+      0 = Not at all
+      1 = Several days
+      2 = More than half the days
+      3 = Nearly every day
     permissible_values:
       0:
         description: Not at all
@@ -37,21 +39,26 @@ enums:
         description: Nearly every day
 
   PHQ9Severity:
-      description: >-
-        PHQ-9 severity category based on total score:
-        0–4 minimal, 5–9 mild, 10–14 moderate,
-        15–19 moderately severe, 20–27 severe.
-      permissible_values:
-        minimal:
-          description: Minimal or no depression (0–4)
-        mild:
-          description: Mild depression (5–9)
-        moderate:
-          description: Moderate depression (10–14)
-        moderately_severe:
-          description: Moderately severe depression (15–19)
-        severe:
-          description: Severe depression (20–27)
+    description: >-
+      PHQ-9 severity category based on total score.
+      Classification:
+      0-4 = minimal
+      5-9 = mild
+      10-14 = moderate
+      15-19 = moderately_severe
+      20-27 = severe
+    permissible_values:
+      minimal:
+        description: Minimal or no depression (total score 0-4)
+      mild:
+        description: Mild depression (total score 5-9)
+      moderate:
+        description: Moderate depression (total score 10-14)
+      moderately_severe:
+        description: Moderately severe depression (total score 15-19)
+      severe:
+        description: Severe depression (total score 20-27)
+        
 classes:
   PHQ9Dataset:
     is_a: Dataset
@@ -183,6 +190,13 @@ slots:
       maximum_value: 27
   
   severity:
-      description: >-
-        PHQ-9 severity category derived from the total_score.
-      range: PHQ9Severity
+    description: >-
+      PHQ-9 severity category derived from total_score.
+      Recommended classification:
+      0-4 = minimal
+      5-9 = mild
+      10-14 = moderate
+      15-19 = moderately_severe
+      20-27 = severe
+      This value is currently stored explicitly and is not automatically inferred by the schema itself.
+    range: PHQ9Severity
