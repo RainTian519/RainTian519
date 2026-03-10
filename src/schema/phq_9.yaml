@@ -63,7 +63,7 @@ classes:
   PHQ9Dataset:
     is_a: Dataset
     description: >-
-      A dataset containing one or more PHQ-9 recors.
+      A dataset containing one or more PHQ-9 records.
     slot_usage:
       records:
         range: PHQ9Record
@@ -112,11 +112,11 @@ slots:
     range: integer
   Age:
     description: >-
-      The particpant's age at the time of the visit.
+      The participant's age at the time of the visit.
     range: float
   Sex:
     description: >-
-      The particpant's sex
+      The participant's sex
     range: integer
   demRace:
     description: >-
