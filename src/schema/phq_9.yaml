@@ -130,7 +130,7 @@ slots:
     description: >-
       Little interest or pleasure in doing things.
     annotations:
-      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000421 # DFS 01
+      pun_as: rdf:type owl:Class; rdfs:subClassOf HP:0012154 # DFS 01
     range: PHQ9ResponseScale
   PHQ9_Q2:
     description: >-
