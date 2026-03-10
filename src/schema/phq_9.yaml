@@ -71,7 +71,6 @@ classes:
       - Age
       - Sex
       - phq9_item_1
-      - phq9_item_1
       - phq9_item_2
       - phq9_item_3
       - phq9_item_4
@@ -120,55 +119,55 @@ slots:
     description: >-
       Hispanic or Latino
     range: integer
-   phq9_item_1:
+  phq9_item_1:
     description: >-
       Little interest or pleasure in doing things.
     annotations:
       pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000421 # DFS 01
     range: PHQ9ResponseScale
-   phq9_item_2:
+  phq9_item_2:
     description: >-
       Feeling down, depressed, or hopeless
     annotations:
       pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000422 # DFS 02
     range: PHQ9ResponseScale
-   phq9_item_3:
+  phq9_item_3:
     description: >-
       Trouble falling or staying asleep, or sleeping too much
     annotations:
       pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000423 # DFS 03
     range: PHQ9ResponseScale
-   phq9_item_4:
+  phq9_item_4:
     description: >-
       Feeling tired or having little energy
     annotations:
       pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000424 # DFS 04
     range: PHQ9ResponseScale
-   phq9_item_5:
+  phq9_item_5:
     description: >-
       Poor appetite or overeating
     annotations:
       pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000426 # DFS 05
     range: PHQ9ResponseScale
-   phq9_item_6:
+  phq9_item_6:
     description: >-
       Feeling bad about yourself—or that you are a failure or have let yourself or your family down. 
     annotations:
       pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000427 # DFS 06
     range: PHQ9ResponseScale
-   phq9_item_7:
+  phq9_item_7:
     description: >-
       Trouble concentrating on things, such as reading the newspaper or watching television.
     annotations:
       pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000428 # DFS 07
     range: PHQ9ResponseScale
-   phq9_item_8:
+  phq9_item_8:
     description: >-
       Moving or speaking so slowly that other people could have noticed; or the opposite—being so fidgety or restless that you have been moving around a lot more than usual.
     annotations:
       pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000429 # DFS 08
     range: PHQ9ResponseScale
-   phq9_item_9:
+  phq9_item_9:
     description: >-
       Thoughts that you would be better off dead or of hurting yourself in some way.
     annotations:
@@ -183,7 +182,7 @@ slots:
       minimum_value: 0
       maximum_value: 27
   
-    severity:
+  severity:
       description: >-
         PHQ-9 severity category derived from the total_score.
       range: PHQ9Severity
