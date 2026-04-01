@@ -10,7 +10,7 @@ prefixes:
   linkml: https://w3id.org/linkml/
   core: https://w3id.org/OHD/DFA-study/core/
   cohra2: https://w3id.org/OHD/DFA-study/cohra2/
-  OHD:  http://purl.obolibrary.org/obo/OHD_
+  OBD:  http://purl.obolibrary.org/obo/OBD_
   dcterms: http://purl.org/dc/terms/
   dwc: http://rs.tdwg.org/dwc/terms/
 
@@ -130,55 +130,55 @@ slots:
     description: >-
       Little interest or pleasure in doing things.
     annotations:
-      pun_as: rdf:type owl:Class; rdfs:subClassOf HP:0012154 # DFS 01
+      pun_as: rdf:type owl:Class; rdfs:subClassOf OBD:0000058 # PHQ 01
     range: PHQ9ResponseScale
   PHQ9_Q2:
     description: >-
       Feeling down, depressed, or hopeless
     annotations:
-      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000422 # DFS 02
+      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000059 # PHQ 02
     range: PHQ9ResponseScale
   PHQ9_Q3:
     description: >-
       Trouble falling or staying asleep, or sleeping too much
     annotations:
-      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000423 # DFS 03
+      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000423 # PHQ 03
     range: PHQ9ResponseScale
   PHQ9_Q4:
     description: >-
       Feeling tired or having little energy
     annotations:
-      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000424 # DFS 04
+      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000424 # PHQ 04
     range: PHQ9ResponseScale
   PHQ9_Q5:
     description: >-
       Poor appetite or overeating
     annotations:
-      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000426 # DFS 05
+      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000426 # PHQ 05
     range: PHQ9ResponseScale
   PHQ9_Q6:
     description: >-
       Feeling bad about yourself—or that you are a failure or have let yourself or your family down. 
     annotations:
-      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000427 # DFS 06
+      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000427 # PHQ 06
     range: PHQ9ResponseScale
   PHQ9_Q7:
     description: >-
       Trouble concentrating on things, such as reading the newspaper or watching television.
     annotations:
-      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000428 # DFS 07
+      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000428 # PHQ 07
     range: PHQ9ResponseScale
   PHQ9_Q8:
     description: >-
       Moving or speaking so slowly that other people could have noticed; or the opposite—being so fidgety or restless that you have been moving around a lot more than usual.
     annotations:
-      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000429 # DFS 08
+      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000429 # PHQ 08
     range: PHQ9ResponseScale
   PHQ9_Q9:
     description: >-
       Thoughts that you would be better off dead or of hurting yourself in some way.
     annotations:
-      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000430 # DFS 09
+      pun_as: rdf:type owl:Class; rdfs:subClassOf OHD:0000430 # PHQ 09
     range: PHQ9ResponseScale
   
   total_score:
