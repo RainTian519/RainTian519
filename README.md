@@ -1,3 +1,2 @@
-# DFA Study
-Repository for resources related to dental fear and anxiety (DFA) studies.
-test123
+# OBD Study
+Repository for resources related to Ontology of Bipolar Disorder(OBD) studies.
